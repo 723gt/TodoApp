@@ -6,7 +6,7 @@
   <body>
     <h1 class="cache"> Login </h1>
 
-    <%= form_for(@login) do |f| %>
+    <%= form_for :login,:url => "login#create" do |f| %>
       <div class="id_in">
         <%= f.label :user_id,"ID" %>
         <%= f.text_field :user_id %>
@@ -14,7 +14,7 @@
 
       <div class="passwd_in">
         <%= f.label :user_passwd,"Pass Word" %>
-        <%= f.text_field :user_passwd %>
+        <%= f.password_field :user_passwd %>
       </div>
 
       <div class="submit_bt">

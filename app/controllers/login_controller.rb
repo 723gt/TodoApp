@@ -1,6 +1,6 @@
 class LoginController < ApplicationController
+  @user = User.new
   def new
-
   end
 
   def create
@@ -11,10 +11,8 @@ class LoginController < ApplicationController
       render '/'
     end
 =end
-    data = params[:user_data].inspect
-    #id = data[:user_id]
-    
-   # render :text => params.inspect
-    render :text => data
+    id = params["login"]["user_id"]
+    pass = params["login"]["user_passws"]
+    render :text => id
   end
 end
