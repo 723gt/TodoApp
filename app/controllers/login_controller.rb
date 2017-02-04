@@ -1,5 +1,4 @@
 class LoginController < ApplicationController
-  @user = User.new
   def new
   end
 
@@ -11,8 +10,16 @@ class LoginController < ApplicationController
       render '/'
     end
 =end
+    
     id = params["login"]["user_id"]
-    pass = params["login"]["user_passws"]
-    render :text => id
+    pass = params["login"]["user_passwd"]
+    id_result = User.find_by_user_id(id)
+    passwd_reult = User.find_by_user_passwd(pass)
+    if id_result.class != NilClass && passwd_reult.class != NilClass
+      text = "ok" 
+    else
+      text = "ng #{id_result.class}  #{passwd_reult.class}"
+    end
+    render :text => text
   end
 end

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <h1 class="cache"> 新規登録 </h1>
+
+    <%= form_for :signup, :url => 'signup#create' do |f| %>
+      <div class="in_id">
+        <%= f.label :user_id,"新規ID" %>
+        <%= f.text_field :user_id %>
+      </div>
+
+      <div class="in_name">
+        <%= f.label :user_name,"アカウント名" %>
+        <%= f.text_field :user_name %>
+      </div>
+
+      <div class="in_pass">
+        <%= f.label :user_pass,"パスワード" %>
+        <%= f.password_field :user_pass %>
+      </div>
+
+      <div class="pass_check">
+        <%= f.label :check_pass,"確認パスワード" %>
+        <%= f.password_field :check_pass %>
+      </div>
+
+      <div class="submitbt">
+        <%= f.submit %>
+      </div>
+    <% end %>
+
+  </body>
+</html>  
+
