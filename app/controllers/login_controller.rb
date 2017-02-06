@@ -16,10 +16,13 @@ class LoginController < ApplicationController
     id_result = User.find_by_user_id(id)
     passwd_reult = User.find_by_user_passwd(pass)
     if id_result.class != NilClass && passwd_reult.class != NilClass
-      text = "ok" 
+      session[:user_id] = id
+      res = User.where(:user_id => id)
+      name = res[0]["user_name"]
+      session[:user_name] = name
+      redirect_to(:controller => 'todo')
     else
-      text = "ng #{id_result.class}  #{passwd_reult.class}"
+      render 'login/new'
     end
-    render :text => text
   end
 end

@@ -1,0 +1,13 @@
+<body>
+  
+  <h1 class="newtask_title">Task Add </h1>
+
+  <%= form_for :newtask,:usl => 'todo#create' do |f| %>
+    <%= f.label :content,"内容" %>
+    <%= f.text_field :content %>
+    <%= f.label :memo,"メモ" %>
+    <%= f.text_area :memo %>
+    <%= f.submit %>
+  <% end %>
+</body>
+    

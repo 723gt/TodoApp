@@ -16,7 +16,6 @@ class SignupController < ApplicationController
 
     user = User.new(user_id:id,user_name:name,user_passwd:pass)
     user.save
-   render :test
 
     #render :text => name.length
 

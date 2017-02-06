@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create(:user_id => 'hoge' ,:user_name => 'hoge hogeo', :user_passwd => 'test') 
+Todo.create(:user_id => 'hoge' ,:content => 'Test',:memo => 'test dayo',:tasktype => 0)

@@ -1,0 +1,9 @@
+<body>
+  <h1 class="titles"> <%= @name %>  Todo Task </h1>
+  <% @todo.each do |d| %>
+    <div class="tasks">
+      ID:<%= d.user_id %>
+      Content:<%= d.content %>
+      Memo;<%= d.memo %>
+  <% end %>
+</body>
