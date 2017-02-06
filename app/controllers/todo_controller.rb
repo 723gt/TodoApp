@@ -3,7 +3,7 @@ class TodoController < ApplicationController
     if session[:user_id] == nil
       redirect_to(:controller => 'login',:action => 'new')
     end
-    @name = session[:user_name] + "'s"
+    @name = session[:user_name]
     @todo = Todo.all
   end
   def new
