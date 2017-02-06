@@ -16,7 +16,7 @@ class SignupController < ApplicationController
 
     user = User.new(user_id:id,user_name:name,user_passwd:pass)
     user.save
-
+    redirect_to(:controller => 'todo',:acttion => 'index')
     #render :text => name.length
 
   end

@@ -1,5 +1,6 @@
 <body>
   <h1 class="titles"> <%= @name %>  Todo Task </h1>
+  <%= link_to 'new task' ,'/todo/new' %>
   <% @todo.each do |d| %>
     <div class="tasks">
       ID:<%= d.user_id %>
