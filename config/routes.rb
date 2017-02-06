@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   get 'todo' => 'todo#index'
   get 'todo/new' => 'todo#new'
   post 'todo/new' => 'todo#create'
+
+  get 'done' => 'done#index'
+  get 'done/new' => 'done#new'
+  post 'done/new' => 'done#create'
 end
