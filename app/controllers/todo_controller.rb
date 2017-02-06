@@ -5,10 +5,12 @@ class TodoController < ApplicationController
       redirect_to('/')
     end
     @name = session[:user_name]
-    @todo = Todo.where(:user_id => session[:user_id])
+    @todo = Todo.where("(user_id = ?) and (tasktype = ?)", session[:user_id],0)
   end
+  
   def new
   end
+
   def create
     content = params["newtask"]["content"]
     memo = params["newtask"]["memo"]
