@@ -13,11 +13,13 @@ class SignupController < ApplicationController
     elsif pass != checkpass
       render :new
     end
-
-    user = User.new(user_id:id,user_name:name,user_passwd:pass)
-    user.save
-    redirect_to(:controller => 'todo',:acttion => 'index')
-    #render :text => name.length
-
+    rescheck = User.find_by_user_id(id)
+    if rescheck.nil?
+      user = User.new(user_id:id,user_name:name,user_passwd:pass)
+      user.save
+      redirect_to(:controller => 'todo',:action => 'index')
+    else
+      redirect_to(:controller => 'signup',:action => 'new')
+    end
   end
 end
