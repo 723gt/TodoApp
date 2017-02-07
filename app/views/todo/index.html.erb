@@ -5,6 +5,7 @@
     <div class="tasks">
       ID:<%= d.user_id %>
       Content:<%= d.content %>
-      Memo;<%= d.memo %>
+      Memo:<%= d.memo %>
+    <%= link_to 'Doneへ' ,todo_cheng_url(d) %>
   <% end %>
 </body>

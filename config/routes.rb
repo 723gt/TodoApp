@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'todo' => 'todo#index'
   get 'todo/new' => 'todo#new'
   post 'todo/new' => 'todo#create'
+  get 'todo/:id' => 'todo#cheng', as: :todo_cheng
 
   get 'done' => 'done#index'
   get 'done/new' => 'done#new'

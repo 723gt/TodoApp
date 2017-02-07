@@ -19,4 +19,10 @@ class TodoController < ApplicationController
     @todo.save
     redirect_to(:contorller => 'todo',:action => 'index')
   end
+
+  def cheng
+    todo = Todo.find(params[:id])
+    todo.update(:tasktype => 2)
+    redirect_to(:controller => 'todo',:action => 'index') 
+  end
 end
