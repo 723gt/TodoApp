@@ -6,6 +6,9 @@
   <span class="todone">
     <%= link_to 'ToDone','/done' %>
   </span>
+  <span class="logout">
+    <%= link_to 'Log Out',login_logout_url %>
+  </span>
     
   <% @todo.each do |d| %>
     <div class="tasks">

@@ -17,4 +17,9 @@ class LoginController < ApplicationController
       render 'login/new'
     end
   end
+
+  def logout
+    session[:user_id] = session[:user_name] = nil
+    redirect_to('/')
+  end
 end
