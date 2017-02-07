@@ -1,26 +1,34 @@
-<body>
-  <h1 class="titles"> <%= @name %>'s  Todo Task </h1>
-  <span class="newtask">
-    <%= link_to 'new task' ,'/todo/new' %>
+<div class="header">
+  <span class="appname">
+    <label>
+      ToDo App
+    </label>
   </span>
-  <span class="todone">
+  <span class="topage">
     <%= link_to 'ToDone','/done' %>
   </span>
   <span class="logout">
     <%= link_to 'Log Out',login_logout_url %>
   </span>
-    
-  <% @todo.each do |d| %>
-    <div class="tasks">
+</div> 
+
+<h1 class="titles"> <%= @name %>'s  Todo Task </h1>
+<span class="newtask">
+  <%= link_to 'new task' ,'/todo/new' %>
+</span>
+<% @todo.each do |d| %>
+  <div class="tasks">
+    <span class="outspan">
       <span class="todocon">
         Content:<%= d.content %>
       </span>
       <span class="todomemo">
         Memo:<%= d.memo %>
       </span>
-      <span class="taskcheng">
-        <%= link_to 'Doneへ' ,todo_cheng_url(d) %>
-      </span>
-    </div>
-  <% end %>
-</body>
+    </span>
+
+    <span class="taskcheng">
+      <%= link_to 'Doneへ' ,todo_cheng_url(d) %>
+    </span>
+  </div>
+<% end %>
