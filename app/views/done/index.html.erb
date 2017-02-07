@@ -1,17 +1,24 @@
-<h1 class="donecache"> <%= @user %>'s Done Task </h1>
-<span class="ToTodo">
-  <%= link_to "To Todo",'/todo' %>
-</span>
-<span class="logout">
-  <%= link_to "LogOut",login_logout_url %>
-</span>
+<div class="header">
+  <span class="appname">
+    <label>
+      Todo App
+    </label>
+  </span>
+  <span class="logout">
+    <%= link_to "LogOut",login_logout_url %>
+  </span>
+</div>
+<h1 class="titles"> <%= @user %>'s Done Task </h1>
+<%= link_to "To Todo",'/todo',:class => "ToTodo" %>
 <% @todo.each do |data| %>
   <div class="donetask">
-    <span class="donecont">
-      Content:<%= data.content %>
-    </span>
-    <span class="donememo">
-      Memo:<%= data.memo %>
+    <span class="outspan">
+      <span class="donecont">
+        Content:<%= data.content %>
+      </span>
+      <span class="donememo">
+        Memo:<%= data.memo %>
+      </span>
     </span>
   </div>
 <% end %>

@@ -4,18 +4,14 @@
       ToDo App
     </label>
   </span>
-  <span class="topage">
-    <%= link_to 'ToDone','/done' %>
-  </span>
   <span class="logout">
     <%= link_to 'Log Out',login_logout_url %>
   </span>
 </div> 
 
 <h1 class="titles"> <%= @name %>'s  Todo Task </h1>
-<span class="newtask">
-  <%= link_to 'new task' ,'/todo/new' %>
-</span>
+<%= link_to 'new task' ,'/todo/new' ,:class => "newtask" %>
+<%= link_to 'ToDone','/done',:class => "todone" %>
 <% @todo.each do |d| %>
   <div class="tasks">
     <span class="outspan">

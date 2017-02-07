@@ -1,57 +1,49 @@
-// Place all the styles related to the done controller here.
+// Place all the styles related to the todo controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 html{
 }
 
+.header{
+  width: 100%;
+  padding: 10px;
+  background: #4996d1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-decoration:none;
+}
+  
 .titles{
   position:relative;
   top: 30px;
-  left: 15px;
 }
 
-.ToTodo{
+.newtask{
   position:relative;
-  top: 30px;
-  left: 20px;
+  top: 10px;
   display: inline-block;
   width: 100px;
-  height: 20px;
+  height: 30px;
   background: #4996d1;
   border-radius: 8px;
   margin:0px;
   text-align: center;
+  color: #111111;
   text-decoration:none;
 }
 
-.donetask{
-  font-size: 120%;
+.tasks{
   position: relative;
-  top: 30px;
-  left: 20px;
-  margin: 10px;
+  top: 20px;
 }
 .outspan{
-  table-layout:fixed;
-  width: 800px;
+  width:700px;
   height: 30px;
   background: #ffffff;
   border: 2px solid #4996d1;
-  max-width:100px;
-  text-align:justify;
-  text-justify: inter-ideograph;
 }
 
-a:link{
-  color:#000000;
-
-}
-
-
-.donecont{
-  margin: 15px;
-}
-.donememo{
+.todomemo{
   width:70px;
-  margin: 15px;
 }
