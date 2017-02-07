@@ -1,11 +1,23 @@
 <body>
-  <h1 class="titles"> <%= @name %>  Todo Task </h1>
-  <%= link_to 'new task' ,'/todo/new' %>
+  <h1 class="titles"> <%= @name %>'s  Todo Task </h1>
+  <span class="newtask">
+    <%= link_to 'new task' ,'/todo/new' %>
+  </span>
+  <span class="todone">
+    <%= link_to 'ToDone','/done' %>
+  </span>
+    
   <% @todo.each do |d| %>
     <div class="tasks">
-      ID:<%= d.user_id %>
-      Content:<%= d.content %>
-      Memo:<%= d.memo %>
-    <%= link_to 'Doneへ' ,todo_cheng_url(d) %>
+      <span class="todocon">
+        Content:<%= d.content %>
+      </span>
+      <span class="todomemo">
+        Memo:<%= d.memo %>
+      </span>
+      <span class="taskcheng">
+        <%= link_to 'Doneへ' ,todo_cheng_url(d) %>
+      </span>
+    </div>
   <% end %>
 </body>

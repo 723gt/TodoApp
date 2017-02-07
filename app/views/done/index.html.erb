@@ -1,12 +1,14 @@
 <h1 class="donecache"> <%= @user %>'s Done Task </h1>
-
-<div class="donetask">
-  <% @todo.each do |data| %>
-    <div class="donecont">
+<span class="ToTodo">
+  <%= link_to "To Todo",'/todo' %>
+</span>
+<% @todo.each do |data| %>
+  <div class="donetask">
+    <span class="donecont">
       Content:<%= data.content %>
-    </div>
-    <div class="donememo">
+    </span>
+    <span class="donememo">
       Memo:<%= data.memo %>
-    </div>
-  <% end %>
-</div>
+    </span>
+  </div>
+<% end %>
