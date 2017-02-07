@@ -2,6 +2,9 @@
 <span class="ToTodo">
   <%= link_to "To Todo",'/todo' %>
 </span>
+<span class="logout">
+  <%= link_to "LogOut",login_logout_url %>
+</span>
 <% @todo.each do |data| %>
   <div class="donetask">
     <span class="donecont">
