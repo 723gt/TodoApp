@@ -8799,25 +8799,22 @@ button.close {
   text-decoration: none;
 }
 
-/* line 7, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
-.header {
-  width: 100%;
-  padding: 10px;
-  background: #4996d1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  text-decoration: none;
+/* line 17, /Users/natsumi/program/todoapp/app/assets/stylesheets/main.scss */
+.logout {
+  position: relative;
+  left: 90%;
+  margin: 0%;
+  padding: 0%;
 }
 
-/* line 17, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
+/* line 7, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
 .titles {
   position: relative;
   top: 30px;
   left: 15px;
 }
 
-/* line 23, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
+/* line 13, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
 .newtask {
   position: relative;
   top: 30px;
@@ -8829,27 +8826,117 @@ button.close {
   border-radius: 8px;
   margin: 0px;
   text-align: center;
-  color: #111111;
+  color: #000000;
   text-decoration: none;
 }
 
-/* line 38, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
+/* line 28, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
+.todone {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 43, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
 .tasks {
+  font-size: 120%;
   position: relative;
   top: 30px;
   left: 20px;
   margin: 10px;
 }
 
-/* line 44, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
+/* line 50, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
 .outspan {
-  width: 700px;
+  table-layout: fixed;
+  width: 800px;
+  height: 30px;
+  background: #ffffff;
+  border: 2px solid #4996d1;
+  max-width: 100px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+/* line 61, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
+.taskcheng {
+  position: relative;
+  left: 10px;
+  width: 50px;
   height: 30px;
   background: #ffffff;
   border: 2px solid #4996d1;
 }
 
-/* line 51, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
+/* line 69, /Users/natsumi/program/todoapp/app/assets/stylesheets/todo.scss */
 .todomemo {
   width: 70px;
+  text-align: left;
+}
+
+/* line 7, /Users/natsumi/program/todoapp/app/assets/stylesheets/done.scss */
+.titles {
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+/* line 13, /Users/natsumi/program/todoapp/app/assets/stylesheets/done.scss */
+.ToTodo {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 27, /Users/natsumi/program/todoapp/app/assets/stylesheets/done.scss */
+.donetask {
+  font-size: 120%;
+  position: relative;
+  top: 30px;
+  left: 20px;
+  margin: 10px;
+}
+
+/* line 34, /Users/natsumi/program/todoapp/app/assets/stylesheets/done.scss */
+.outspan {
+  table-layout: fixed;
+  width: 800px;
+  height: 30px;
+  background: #ffffff;
+  border: 2px solid #4996d1;
+  max-width: 100px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+/* line 45, /Users/natsumi/program/todoapp/app/assets/stylesheets/done.scss */
+a:link {
+  color: #000000;
+}
+
+/* line 51, /Users/natsumi/program/todoapp/app/assets/stylesheets/done.scss */
+.donecont {
+  margin: 15px;
+}
+
+/* line 54, /Users/natsumi/program/todoapp/app/assets/stylesheets/done.scss */
+.donememo {
+  width: 70px;
+  margin: 15px;
 }
