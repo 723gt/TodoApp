@@ -5,6 +5,9 @@
 
   <body>
     <h1 class="cache"> 新規登録 </h1>
+    <% if @flag.nil? %>
+      <%= @msg %>
+    <% end %>
 
     <%= form_for :signup, :url => 'signup#create' do |f| %>
       <div class="in_id">
