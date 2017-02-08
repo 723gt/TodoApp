@@ -1,5 +1,14 @@
-  
-  <h1 class="newtask_title">Task Add </h1>
+<div class="header">
+  <span class="appname">
+     <label>
+       ToDo App
+     </label>
+  </span>
+  <span class="logout">
+     <%= link_to 'Log Out',login_logout_url %>
+  </span>
+</div>   
+  <h1 class="ttitles">Task Add </h1>
 
   <%= form_for :newtask,:usl => 'todo#create' do |f| %>
     <div class='innewtask'>
