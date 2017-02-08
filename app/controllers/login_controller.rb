@@ -7,15 +7,22 @@ class LoginController < ApplicationController
     pass = params["login"]["user_passwd"]
     id_result = User.find_by_user_id(id)
     passwd_reult = User.find_by_user_passwd(pass)
-    if id_result.class != NilClass && passwd_reult.class != NilClass
+ 
+    if id.length == 0 || pass.length == 0
+      cont = 'login'
+      act = 'new'
+    elsif id_result.class != NilClass && passwd_reult.class != NilClass
       session[:user_id] = id
       res = User.where(:user_id => id)
       name = res[0]["user_name"]
       session[:user_name] = name
-      redirect_to(:controller => 'todo')
+      cont = 'todo'
+      act = 'index'
     else
-      render 'login/new'
+      cont = 'login'
+      act = 'new'
     end
+    redirect_to(:controller => cont,:action => act)
   end
 
   def logout

@@ -1,27 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
+<div class="header">
+  <span class="appname">
+     <label>
+       ToDo App
+     </label>
+   </span>
+</div> 
 
-  <body>
-    <h1 class="cache"> Login </h1>
+<h1 class="cache"> Login </h1>
 
-    <%= form_for :login,:url => "login#create" do |f| %>
-      <div class="id_in">
-        <%= f.label :user_id,"ID" %>
-        <%= f.text_field :user_id %>
-      </div>
+ <%= form_for :login,:url => "login#create" do |f| %>
+   <div class="loginform">
+     <div class="id_in">
+       <%= f.label :user_id,"ID" %>
+       <%= f.text_field :user_id %>
+     </div>
 
-      <div class="passwd_in">
-        <%= f.label :user_passwd,"Pass Word" %>
-        <%= f.password_field :user_passwd %>
-      </div>
+     <div class="passwd_in">
+       <%= f.label :user_passwd,"Pass Word" %>
+       <%= f.password_field :user_passwd %>
+     </div>
 
-      <div class="submit_bt">
-        <%= f.submit 'login' %>
-      </div>
-    <% end %>
-  </body>
-</html>
+     <div class="submit_bt">
+       <%= f.submit 'login' %>
+     </div>
+   </div>
+ <% end %>
+
 
 

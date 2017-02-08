@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
+<div class="header">
+  <span class="appname">
+    <label>
+      ToDo App
+    </label>
+  </span>
+</div> 
 
-  <body>
-    <h1 class="cache"> 新規登録 </h1>
-    <% if @flag.nil? %>
-      <%= @msg %>
-    <% end %>
+<h1 class="cache"> 新規登録 </h1>
+  <% if @flag.nil? %>
+    <%= @msg %>
+  <% end %>
 
-    <%= form_for :signup, :url => 'signup#create' do |f| %>
+  <%= form_for :signup, :url => 'signup#create' do |f| %>
+    <div class="newuser">
       <div class="in_id">
         <%= f.label :user_id,"新規ID" %>
         <%= f.text_field :user_id %>
@@ -30,11 +33,10 @@
         <%= f.password_field :check_pass %>
       </div>
 
-      <div class="submitbt">
+      <div class="ssubmitbt">
         <%= f.submit "登録" %>
-      </div>
-    <% end %>
+     </div>
+    </div>
+  <% end %>
 
-  </body>
-</html>  
 

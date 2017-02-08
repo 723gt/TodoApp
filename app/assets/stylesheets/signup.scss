@@ -1,3 +1,28 @@
 // Place all the styles related to the signup controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.newuser{
+  text-align:center;
+  position: relative;
+  top:30px;
+}
+
+.in_name{
+  position: relative;
+  left: -21px;
+}
+
+.in_pass{
+  position: relative;
+  left: -14px;
+}
+
+.pass_check{
+  position: relative;
+  left: -28px;
+}
+
+.ssubmitbt{
+  position: relative;
+  top:15px;
+}
