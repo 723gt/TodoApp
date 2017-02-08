@@ -25,4 +25,10 @@ class TodoController < ApplicationController
     todo.update(:tasktype => 2)
     redirect_to(:controller => 'todo',:action => 'index') 
   end
+
+  def destroy
+    todo = Todo.find(params[:id])
+    todo.update(:tasktype => 5)
+    redirect_to(:controller => 'todo',:action => 'index')
+  end
 end

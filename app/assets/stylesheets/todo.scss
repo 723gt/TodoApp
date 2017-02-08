@@ -8,6 +8,12 @@ html{
   position:relative;
   top: 30px;
   left: 15px;
+  width: 500px;
+  margin-top:30px;
+  margin-bottom:20px;
+  margin-left:0px;
+  margin-right:0px;
+  padding:0%;
 }
 
 .newtask{
@@ -59,14 +65,33 @@ html{
 }
 
 .taskcheng{
-  position:relative;
+  position: relative;
+  top: 0px;
   left: 10px;
-  width: 50px;
-  height: 30px;
-  background: #ffffff;
-  border: 2px solid #4996d1;
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
 }
 .todomemo{
   width:70px;
   text-align:left;
+}
+
+.tdestroy{
+  position: relative;
+  top: 0px;
+  left: 10px;
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
 }

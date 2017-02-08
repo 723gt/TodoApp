@@ -20,5 +20,8 @@
         Memo:<%= data.memo %>
       </span>
     </span>
+    <span class="ddestroy">
+      <%= link_to '削除' ,done_destroy_url(data) %>
+    </span>
   </div>
 <% end %>
