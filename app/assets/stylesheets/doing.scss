@@ -1,3 +1,19 @@
 // Place all the styles related to the doing controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dtotodo{
+  position:relative;
+  top: 30px;
+  left: 15px;
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+

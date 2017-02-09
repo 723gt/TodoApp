@@ -22,7 +22,7 @@ class TodoController < ApplicationController
 
   def cheng
     todo = Todo.find(params[:id])
-    todo.update(:tasktype => 2)
+    todo.update(:tasktype => 1)
     redirect_to(:controller => 'todo',:action => 'index') 
   end
 

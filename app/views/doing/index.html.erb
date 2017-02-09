@@ -9,9 +9,8 @@
   </span>
 </div> 
 
-<h1 class="titles"> <%= @name %>'s  Todo Task </h1>
-<%= link_to 'new task' ,'/todo/new' ,:class => "newtask" %>
-<%= link_to 'ToDoing' ,'/doing',:class => "todoing" %>
+<h1 class="titles"> <%= @name %>'s Doing  Task </h1>
+<%= link_to 'ToTodo' ,'/todo' ,:class => "dtotodo" %>
 <%= link_to 'ToDone','/done',:class => "todone" %>
 <% @todo.each do |d| %>
   <div class="tasks">
@@ -25,10 +24,10 @@
     </span>
 
     <span class="taskcheng">
-      <%= link_to 'Doingへ' ,todo_cheng_url(d) %>
+      <%= link_to 'Doneへ' ,doing_cheng_path(d) %>
     </span>
     <span class="tdestroy">
-      <%= link_to '削除',todo_destroy_url(d) %>
+      <%= link_to '削除',doing_destroy_url(d) %>
     </span>
   </div>
 <% end %>
