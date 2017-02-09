@@ -1,0 +1,2 @@
+class DoingController < ApplicationController
+end
