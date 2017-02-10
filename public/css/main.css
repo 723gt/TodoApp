@@ -22,13 +22,33 @@ html{
 
 .to_login{
   position: relative;
-  left: 400px;
+  left: 300px;
   top: 70px;
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size:120%;
+  vertical-align:middle;
+
 }
 
 .to_signup{
   position: relative;
-  left: 800px;
-  top: 50px;
+  left: 500px;
+  top: 75px;
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 120%;
 }
 
