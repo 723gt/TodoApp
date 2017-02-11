@@ -1,6 +1,6 @@
 # Monolith  
 個人向けのToDoリスト  
-Trelloを個人で使うには機能が多すぎたため自作 
+Trelloを個人で使うには機能が多すぎたため自作  
 Monolithなのは2001: A Space Odyssey より  
  
 # Ruby Version  
