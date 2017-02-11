@@ -26,7 +26,7 @@ class SignupController < ApplicationController
       cont = 'signup'
       act = 'new'
     elsif rescheck.nil?
-      user = User.new(user_id:id,user_name:name,user_passwd:pass)
+      user = User.new(user_id:id,user_name:name,password:pass)
       user.save
       cont = 'todo'
       act = 'index'

@@ -6,7 +6,7 @@ class LoginController < ApplicationController
     id = params["login"]["user_id"]
     pass = params["login"]["user_passwd"]
     id_result = User.find_by_user_id(id)
-    passwd_reult = User.find_by_user_passwd(pass)
+    passwd_reult = User.find_by_password(pass)
  
     if id.length == 0 || pass.length == 0
       cont = 'login'

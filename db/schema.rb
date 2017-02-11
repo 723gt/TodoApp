@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170206012500) do
+ActiveRecord::Schema.define(version: 20170211032501) do
 
   create_table "todos", force: :cascade do |t|
     t.text     "user_id"
@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 20170206012500) do
   create_table "users", force: :cascade do |t|
     t.text     "user_id"
     t.text     "user_name"
-    t.text     "user_passwd"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.text     "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
