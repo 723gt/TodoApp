@@ -1,24 +1,10 @@
-# README
+# Monolith  
+個人向けのToDoリスト  
+Trelloを個人で使うには機能が多すぎたため自作 
+Monolithなのは2001: A Space Odyssey より  
+ 
+# Ruby Version  
+2.3.3  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Rails Version  
+5.0.1  
