@@ -14,10 +14,15 @@ class TodoController < ApplicationController
   def create
     content = params["newtask"]["content"]
     memo = params["newtask"]["memo"]
-    id = session[:user_id]
-    @todo = Todo.new(:user_id => id,:content => content,:memo => memo,:tasktype => 0)
-    @todo.save
-    redirect_to(:contorller => 'todo',:action => 'index')
+    if content.length == 0 || memo.length == 0
+      act = 'new'
+    else
+      id = session[:user_id]
+      @todo = Todo.new(:user_id => id,:content => content,:memo => memo,:tasktype => 0)
+      @todo.save
+      act = 'index' 
+    end
+    redirect_to(:contorller => 'todo',:action => act)
   end
 
   def cheng
