@@ -12,13 +12,17 @@
 
   <%= form_for :newtask,:usl => 'todo#create' do |f| %>
     <div class='innewtask'>
-      <div class="newcont">
+      <span class="contlabel">
         <%= f.label :content,"内容" %>  
+      </span>
+      <div class="newcont">
         <%= f.text_field :content,:maxlength => 20 %>
       </div>
-      <div class="newmemo">
+      <span class="memolabel">
         <%= f.label :memo,"メモ" %>
-        <%= f.text_area :memo,:maxlength => 80 %>
+      </span>
+      <div class="newmemo">
+        <%= f.text_area :memo,:maxlength => 80,:size => '30x10' %>
       </div>
       <div class="newsubmit">
         <%= f.submit '登録' %>
