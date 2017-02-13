@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   get 'todo' => 'todo#index'
   get 'todo/new' => 'todo#new'
   post 'todo/new' => 'todo#create'
-  get 'todo/:id' => 'todo#cheng', as: :todo_cheng
-  get 'todo/:id' => 'todo#destroy', as: :todo_destroy
+  get 'todo/:id/cheng' => 'todo#cheng', as: :todo_cheng
+  get 'todo/:id/destroy' => 'todo#destroy', as: :todo_destroy
 
   get 'done' => 'done#index'
   get 'done/new' => 'done#new'
