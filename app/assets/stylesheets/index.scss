@@ -1,0 +1,54 @@
+// Place all the styles related to the todo controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html{
+}
+
+.header{
+  width: 100%;
+  padding: 10px;
+  background: #4996d1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-decoration:none;
+}
+
+.indexname{
+  text-align: center;
+  position:relative;
+  top: 30px;
+}
+
+.to_login{
+  position: relative;
+  left: 300px;
+  top: 70px;
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size:120%;
+  vertical-align:middle;
+
+}
+
+.to_signup{
+  position: relative;
+  left: 500px;
+  top: 75px;
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background: #4996d1;
+  border-radius: 8px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 120%;
+}
+
