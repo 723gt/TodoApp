@@ -13,3 +13,8 @@ module Todoapp
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+def reset
+  super
+  @form_authenticity_token = nil
+end
