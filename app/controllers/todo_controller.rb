@@ -36,4 +36,12 @@ class TodoController < ApplicationController
     todo.update(:tasktype => 5)
     redirect_to(:controller => 'todo',:action => 'index')
   end
+
+  def edit
+    @data = params[:id]
+  end
+
+  def update
+    render :text => params[:id] 
+  end
 end

@@ -1,0 +1,8 @@
+<%= form_for :edit,:url => todo_update_url(@data) do |f| %>
+  <%= f.label :content ,'内容' %>
+  <%= f.text_field :content,:maxlength => 20 %>
+  <%= f.label :memo,'メモ' %>
+  <%= f.text_area :memo,:maxlength => 80 ,:size => "30x10" %>
+  <%= f.submit '登録' %>
+<% end %>
+
