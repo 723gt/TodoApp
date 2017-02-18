@@ -1,8 +1,39 @@
+<div class="header">
+  <span class="appname">
+    <label>
+      <%= link_to 'Monolith',root_path %>
+    </label>
+  </span>
+  <span class="logout">
+   <%= link_to 'Log Out',login_logout_url %>
+  </span>
+</div>
+
+<h1 class="ttitles">
+  Task Edit
+</h1>
+
 <%= form_for :edit,:url => todo_update_url(@data) do |f| %>
-  <%= f.label :content ,'内容' %>
-  <%= f.text_field :content,:maxlength => 20 %>
-  <%= f.label :memo,'メモ' %>
-  <%= f.text_area :memo,:maxlength => 80 ,:size => "30x10" %>
-  <%= f.submit '登録' %>
+  <div class="innewtask">
+    <div class="contlabel">
+      <%= f.label :content ,'内容' %>
+    </div>
+
+    <div class="newcont">
+      <%= f.text_field :content,:maxlength => 20 %>
+    </div>
+    <span class="memolabel">
+      <%= f.label :memo,'メモ' %>
+    </span>
+    <div class="newmemo">
+      <%= f.text_area :memo,:maxlength => 80 ,:size => "30x10" %>
+    </div>
+    <div class="newsubmit">
+      <%= f.submit '登録' %>
+    </div>
+    <span class="backbt">
+      <%= link_to "戻る",:controller => 'todo',:action => 'index' %>
+    </span>
+  </div>
 <% end %>
 
