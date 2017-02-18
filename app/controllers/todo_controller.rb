@@ -42,6 +42,10 @@ class TodoController < ApplicationController
   end
 
   def update
-    render :text => params[:id] 
+    content = params[:edit][:content]
+    memo = params[:edit][:memo]
+    todo = Todo.find(params[:id])
+    todo.update(:content => content,:memo => memo)
+    redirect_to(:controller => 'todo',:action => 'index')
   end
 end

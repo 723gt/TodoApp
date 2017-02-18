@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get 'todo/:id/cheng' => 'todo#cheng', as: :todo_cheng
   get 'todo/:id/destroy' => 'todo#destroy', as: :todo_destroy
   get 'todo/:id/edit' => 'todo#edit' , as: :todo_edit
-  post 'todo/update' => 'todo#update', as: :todo_update
+  post 'todo/:id/update' => 'todo#update', as: :todo_update
 
   get 'done' => 'done#index'
   get 'done/new' => 'done#new'
