@@ -20,13 +20,13 @@
     </div>
 
     <div class="newcont">
-      <%= f.text_field :content,:maxlength => 20 %>
+      <%= f.text_field :content,:placeholder => @beforecnt,:maxlength => 20 %>
     </div>
     <span class="memolabel">
       <%= f.label :memo,'メモ' %>
     </span>
     <div class="newmemo">
-      <%= f.text_area :memo,:maxlength => 80 ,:size => "30x10" %>
+      <%= f.text_area :memo,:placeholder => @beforememo,:maxlength => 80 ,:size => "30x10" %>
     </div>
     <div class="newsubmit">
       <%= f.submit '登録' %>

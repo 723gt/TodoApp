@@ -39,6 +39,9 @@ class TodoController < ApplicationController
 
   def edit
     @data = params[:id]
+    todo = Todo.find(@data)
+    @beforecnt = todo.content
+    @beforememo = todo.memo
   end
 
   def update
