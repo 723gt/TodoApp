@@ -58,3 +58,7 @@ gem 'bootswatch-rails'
 
 #hash
 gem 'bcrypt', '~> 3.1.7'
+
+gem 'therubyracer'
+gem 'less-rails' 
+gem 'twitter-bootstrap-rails' 
